@@ -17,7 +17,7 @@ import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.com
 import { HeaderComponent } from './navigation/header/header.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import { LoginComponent } from './auth/login/login.component';
-import { UserService} from './services/user.service'
+import { UserService} from './services/data/user.service'
 
 @NgModule({
   declarations: [
