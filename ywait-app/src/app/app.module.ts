@@ -1,6 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { AppRoutingModule } from './app-routing.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material.module';
+import { FormsModule } from '../../node_modules/@angular/forms';
+import { AuthModule } from './auth.module';
 
 import { AppComponent } from './app.component';
 import { MerchantComponent } from './merchant/merchant.component';
@@ -18,7 +23,6 @@ import { UserService} from './services/user.service'
   declarations: [
     AppComponent,
     MerchantComponent,
-    LoginComponent,
     CouponListComponent,
     AboutComponent,
     UserProfileComponent,
@@ -27,9 +31,16 @@ import { UserService} from './services/user.service'
     HeaderComponent,
     SignupComponent,
     UserService,
+    HeaderComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    MaterialModule,
+    FormsModule,
+    FlexLayoutModule,
+    AppRoutingModule,
+    AuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]

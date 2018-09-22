@@ -10,8 +10,8 @@ export class UserService {
   }
 
   getById(userId: number): Observable<User[]>  {
-    
+
     return new Observable<User[]>();
   }
-
+ 
 }
