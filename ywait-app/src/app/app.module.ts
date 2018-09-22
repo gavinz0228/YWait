@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppRoutingModule } from './app-routing.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 import { AppComponent } from './app.component';
@@ -16,6 +17,7 @@ import { SignupComponent } from './auth/signup/signup.component';
 import { LoginComponent } from './auth/login/login.component';
 import { MaterialModule } from './material.module';
 import { FormsModule } from '../../node_modules/@angular/forms';
+import { AuthModule } from './auth.module';
 
 
 @NgModule({
@@ -33,10 +35,12 @@ import { FormsModule } from '../../node_modules/@angular/forms';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     MaterialModule,
     FormsModule,
     FlexLayoutModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]
