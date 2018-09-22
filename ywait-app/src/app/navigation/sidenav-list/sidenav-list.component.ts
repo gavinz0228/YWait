@@ -18,7 +18,7 @@ export class SidenavListComponent implements OnInit {
   }
 
   onLogout() {
-
+    this.onSidenavClose();
   }
 
 }

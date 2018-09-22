@@ -9,7 +9,3 @@ html, body {
 body {
   margin: 0;
 }
-
-mat-form-field {
-  width: 300px;
-}
