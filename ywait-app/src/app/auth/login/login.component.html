@@ -29,5 +29,7 @@
   required
   formControlName = "password">
 </mat-form-field>
+<button [disabled] = "loginForm.invalid" type = "submit" mat-raised-button color = "primary">Login</button>
+
   </form>
 </section>
