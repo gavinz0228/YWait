@@ -12,7 +12,9 @@ export class LoginComponent implements OnInit {
 
   constructor(
     private formBuilder: FormBuilder
-  ) { }
+  ) {
+    this.createForm();
+  }
 
   ngOnInit() {
   }
@@ -25,6 +27,10 @@ export class LoginComponent implements OnInit {
     });
 
     console.log('this is the form', this.loginForm);
+  }
+
+  onLogin() {
+    console.log('user has logged in.');
   }
 
 }
