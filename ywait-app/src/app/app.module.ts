@@ -29,8 +29,6 @@ import { UserService} from './services/data/user.service'
     FooterComponent,
     SidenavListComponent,
     HeaderComponent,
-    SignupComponent,
-    UserService,
     HeaderComponent
   ],
   imports: [
@@ -42,7 +40,7 @@ import { UserService} from './services/data/user.service'
     AppRoutingModule,
     AuthModule
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
