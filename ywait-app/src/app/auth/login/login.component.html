@@ -1,10 +1,12 @@
 <section class = "login-form">
+  <div id = "parent">
   <form
   [formGroup] = "loginForm"
   (ngSubmit)="onLogin()"
   fxLayout = "column"
   fxLayoutGap = "10px"
-  fxLayoutAlign = "center center">
+  fxLayoutAlign = "center center"
+  heigh>
 
   <mat-form-field>
   <input
@@ -32,4 +34,5 @@
 <button [disabled] = "loginForm.invalid" type = "submit" mat-raised-button color = "primary">Login</button>
 
   </form>
+</div>
 </section>

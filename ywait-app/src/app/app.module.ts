@@ -16,6 +16,7 @@ import { FooterComponent } from './footer/footer.component';
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
 import { HeaderComponent } from './navigation/header/header.component';
 import { UserService} from './services/data/user.service';
+import { HttpClientModule } from '../../node_modules/@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { UserService} from './services/data/user.service';
     FormsModule,
     FlexLayoutModule,
     AppRoutingModule,
-    AuthModule
+    AuthModule,
+    HttpClientModule
   ],
   providers: [UserService],
   bootstrap: [AppComponent]
