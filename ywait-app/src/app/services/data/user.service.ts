@@ -6,16 +6,16 @@ import { BaseDataService } from './base-data-service'
 @Injectable()
 export class UserService extends BaseDataService{
 
-  constructor(private http: HttpClient) { 
+  constructor(private http: HttpClient) {
     super();
   }
 
-  public getById(userId: number): Observable<User>  {
-    let user = Observable.of(new User()); 
-    return user;
-  }   
+  public getById(userId: number): Observable<any>  {
+     const user = Observable.of(0);
+   return user;
+  }
 
-  public add(user: User): Observable<boolean>{
+  public add(user: User): Observable<boolean> {
     return new Observable<boolean>();
   }
   public login(userName: string, password: string): Observable<User>{
@@ -26,7 +26,7 @@ export class UserService extends BaseDataService{
     return new Observable<boolean>();
   }
   public deleteById(id: number): Observable<boolean>{
-    return new Observable<boolean>(); 
+    return new Observable<boolean>();
   }
- 
+
 }

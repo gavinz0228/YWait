@@ -15,9 +15,7 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
 import { FooterComponent } from './footer/footer.component';
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
 import { HeaderComponent } from './navigation/header/header.component';
-import { SignupComponent } from './auth/signup/signup.component';
-import { LoginComponent } from './auth/login/login.component';
-import { UserService} from './services/data/user.service'
+import { UserService} from './services/data/user.service';
 
 @NgModule({
   declarations: [

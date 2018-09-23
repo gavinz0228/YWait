@@ -6,6 +6,30 @@ fxLayoutAlign = "center center"
 #formValues="ngForm"
 (ngSubmit)="onSubmit(formValues)">
 <mat-form-field>
+    <input
+    type="firstName"
+    matInput
+    placeholder = "Your first name"
+    ngModel
+    name="firstName"
+    email
+    required
+    #firstNameInput = "ngModel">
+    <mat-error *ngIf = "emailInput.hasError('required')">Field must not be empty.</mat-error>
+  </mat-form-field>
+  <mat-form-field>
+      <input
+      type="lastName"
+      matInput
+      placeholder = "Your last name"
+      ngModel
+      name="lastName"
+      email
+      required
+      #lastNameInput = "ngModel">
+      <mat-error *ngIf = "emailInput.hasError('required')">Field must not be empty.</mat-error>
+    </mat-form-field>
+<mat-form-field>
   <input
   type="email"
   matInput
