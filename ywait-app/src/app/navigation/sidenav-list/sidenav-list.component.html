@@ -7,17 +7,37 @@
     <mat-icon>input</mat-icon>
     <span class = "nav-caption"> Login </span>
 </a>
+
+<a>
+<img style="width:100px;height: 100px;margin-bottom: 10px" src="assets/flowers.jpeg" alt = "avatar" class="center"
+*ngIf="!profile_pic">
+<div style="text-align: center;padding-bottom: 20px">
+  <div class="center">Bin Chen</div>
+  <div class="center" style="color:gray;">@bbinchen</div>
+</div>
+</a>
+<div fxLayout="row" style="padding-bottom: 10px">
+    <div style="padding-left:10px">236.5 FC</div>
+    <a  fxFlex fxLayout fxLayoutAlign= "flex-end" style="padding-right: 10px">Buy Store Credits</a>
+    </div>
+    <hr>
 <a  mat-list-item routerLink="/" (click) = "onSidenavClose()">
-    <mat-icon>fitness_center</mat-icon>
-    <span class = "nav-caption"> User Profile </span>
+    <mat-icon svgIcon="award"></mat-icon>
+    <span class = "nav-caption"> Royalty Points </span>
 </a>
 <a  mat-list-item routerLink="/" (click) = "onSidenavClose()">
-  <mat-icon>fitness_center</mat-icon>
-  <span class = "nav-caption"> Merchants </span>
+  <mat-icon>settings</mat-icon>
+  <span class = "nav-caption"> Settings </span>
 </a>
 <a  mat-list-item routerLink="/" (click) = "onSidenavClose()">
-  <mat-icon>fitness_center</mat-icon>
-  <span class = "nav-caption"> Coupons </span>
+  <mat-icon>settings</mat-icon>
+  <span class = "nav-caption"> About </span>
+</a>
+
+<div style="position: fixed;bottom: 0px">
+<a  mat-list-item routerLink="/" (click) = "onSidenavClose()">
+  <mat-icon>settings</mat-icon>
+  <span class = "nav-caption"> Invite a friend to earn 50 FC </span>
 </a>
 <mat-list-item>
 
@@ -26,4 +46,5 @@
         <span class = "nav-caption"> Logout </span>
     </button>
   </mat-list-item>
+</div>
 </mat-nav-list>
